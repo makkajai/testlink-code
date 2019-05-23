@@ -287,9 +287,11 @@ $tlCfg->smarty_debug = false;
  *  for security reasons (see http://itsecuritysolutions.org/2012-08-13-TestLink-1.9.3-multiple-vulnerabilities/)
  *  put it out of reach via web or configure access denied.
  */
-$tlCfg->log_path = '/var/testlink/logs/'; /* unix example */
+// $tlCfg->log_path = '/var/testlink/logs/'; /* unix example */
+    $tlCfg->log_path = '/var/app/current/logs/';
 
-
+    
+    
 /**
  * @var string How to warning user when security weak points exists.
  *
@@ -1438,8 +1440,9 @@ $g_repositoryType = TL_REPOSITORY_TYPE_FS;
  * Put it out of reach via web or configure access denied.
  *
  **/
-$g_repositoryPath = '/var/testlink/upload_area/';  /* unix example */
-
+// $g_repositoryPath = '/var/testlink/upload_area/';  /* unix example */
+    $g_repositoryPath = '/var/app/current/upload_area/';
+    
 /**
  * compression used within the repository
  * TL_REPOSITORY_COMPRESSIONTYPE_NONE => no compression
