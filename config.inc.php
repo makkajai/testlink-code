@@ -1431,7 +1431,7 @@ $g_attachments->access_string = "[*]";
  * TL_REPOSITORY_TYPE_DB => database
  * TL_REPOSITORY_TYPE_FS => filesystem
  **/
-$g_repositoryType = TL_REPOSITORY_TYPE_FS;
+$g_repositoryType = TL_REPOSITORY_TYPE_DB;
 
 /**
  * TL_REPOSITORY_TYPE_FS: the where the filesystem repository should be located
